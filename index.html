@@ -1,34 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
     <title>My Travel Site</title>
-
-    </head>
-<body>
+  </head>
+  <body>
     <!--  -->
 
-
-    <!-- h1 is a header tag and is basically a big bold piece of text-->
+    <!-- h1 is a header tag and is basically a big bold piece of text -->
     <h1>Welcome to my Travel Site</h1>
-    
+
     <!-- p is a paragraph tag and is basically small text for everyday content-->
     <p>This site is all about where I want to travel.</p>
-    <h2>Here are some Places I'd like to visit::</h2>
+    <h2>Here are some places I'd like to visit:</h2>
 
+    <!-- ul is an unordered list (bulletpoints) -->
     <ul>
-        <li><a href="https://www.japan.go.jp/" target="blank">Japan</a></li>
-        <li>Italy</li>
-        <li>Iceland</li>
-        <li>Germany</li>
+      <!-- li is a list item (depending on whether parent is ul or
+            ol, it will either be a bulletpoint or a numbered item) -->
+      <li>
+        <img src="./assets/japan.jpg" width="50" />
+        <!-- Anchors use href -->
+        <a href="https://www.japan.travel/en/us/" target="_blank">Japan</a>
+      </li>
+      <li>
+        <!-- Images use src -->
+        <img src="./assets/italy.jpg" width="50" />
+        <a href="https://www.italia.it/en" target="_blank">Italy</a>
+      </li>
+      <li>
+        <img src="./assets/iceland.jpg" width="50" />
+        <a href="https://www.visiticeland.com" target="_blank">Iceland</a>
+      </li>
     </ul>
 
-    <a href="https://www.japan.go.jp/"Link to Japan Travel Site>
+    <!-- anchor tag  (a) lets us write links to other html pages / websites -->
+    <a href="https://www.japan.travel/en/us/">Link to Japan Travel Site</a>
 
+    <!-- Dummy Link for testing purposes -->
+    <a href="#">Dummy Link</a>
 
-        <a href=""#">Dummy Link</a>"
-</body> b
+    <!-- table Creates a table in HTML -->
+    <table>
+      <!-- To create a row in an html table, we use the <tr></tr> tag -->
+      <tr>
+        <!-- To create a header column in a row, we use the <th></th> tag -->
+        <th>Destination</th>
+        <th>Capital</th>
+        <th>Official Language</th>
+      </tr>
+      <tr>
+        <!-- <td> tag for table data - a piece of data in a row / column -->
+        <td>Japan</td>
+        <td>Tokyo</td>
+        <td>Japanese</td>
+      </tr>
+      <tr>
+        <!-- <td> tag for table data - a piece of data in a row / column -->
+        <td>Italy</td>
+        <td>Rome</td>
+        <td>Italian</td>
+      </tr>
+      <tr>
+        <!-- <td> tag for table data - a piece of data in a row / column -->
+        <td>Iceland</td>
+        <td>Reykjavik</td>
+        <td>Icelandic</td>
+      </tr>
+    </table>
 
+    <h1>Where do you want to go?</h1>
+    <!-- Creates a form -->
+    <form>
+      <!-- Input creates an input field (can type whatever inside of it) -->
+      <input placeholder="Type the place you want to travel" />
 
+      <input type="button" value="This is my button" />
+      <p>Select any that apply:</p>
+      <label for="japan">Japan</label>
+      <input type="checkbox" name="japan" id="japan" />
+      <label for="italy">Italy</label>
+      <input type="checkbox" name="italy" id="italy" />
+      <label for="Iceland">Iceland</label>
+      <input type="checkbox" name="Iceland" id="Iceland" />
 
+      <p>What is your <span>favorite</span> type of travel location?</p>
+      <select>
+        <option value="beach">Beach</option>
+        <option value="mountains">Mountains</option>
+        <option value="city">City</option>
+      </select>
 
+      <br />
+      <textarea rows="10" cols="50">
+Tell me a bit about yourself
+      </textarea>
+      <!-- One line of space with break tag -->
+      <br />
+      <input type="submit" value="This is my submit button" />
+    </form>
+
+    <!-- Divs stand for divisions -->
+  </body>
 </html>
